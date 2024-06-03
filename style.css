@@ -230,4 +230,10 @@ ul a{
 .copyrite{
     padding-top: 5px;
 }
+/** this is for shadow of text and  shapee 3d **/
+/** background: linear-gradient(to left, #00ccff, #b3f0ff)
+box-shadow: 3px 5px 3px black;
+text shadow: 2px 2px 5px black; **/
+
+
      
