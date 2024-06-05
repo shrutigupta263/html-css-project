@@ -1,239 +1,245 @@
-* {
-    margin: 0;
-    font-family: Arial;
-    border: border-box;
+nav, header, footer {
+    display:block;
+}
+body {
+    line-height: 1;
+    margin:0;
+}
+label {
+    font-size: 35px;
+    font-weight:600;
 
 }
-
-.navbar {
-    height: 60px;
-    background-color: #0f1111;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+p {
+    font-size: 28px;
+    line-height: 1.2;
+}
+article p {
+    font-size: 35px;
+    padding: 20px;
 }
 
-.nav-log {
-    height:50px;
-    width: 100px;
-}
-.logo {
-    background-image: url("amazon_logo.png");
-    background-size: cover;
-    height: 50px;
-    width: 100px;
-}
-.border {
-    border: 1.5px solid transparent;
-}
-
-.border:hover {
-    border: 1.5x solid white; 
-} 
-/**box2**/
-.add-first {
-    color: #cccccc;
-    font-size: 1rem;
-    margin-left: 15px;
-}
-.add-second {
-    font-size: 1rem;
-    margin-left: 3px;
-}
-.add-icon {
-    display:flex;
-    align-items: center;
-}
-
-/**box3**/
-.nav-search {
-    display:flex;
-    justify-content: space-evenly;
-    background-color: pink;
-    width:628px;
-    height: 40px;
-    border-radius: 4px; 
-}
-.search-select {
-    background-color: #f3f3f3;
-    width:100%;
-    text-align: center;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border: none;
-}
-.search-input {
+.conatiner {
     width: 100%;
-    font-size: 1rem;
-    border: none;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
-.search-icon {
-    width: 45px;
-    display:flex;
-    justify-content: center;
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    font-size: 1.2rem;
-    background-color: #febd68;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    color: #0f1111;
 }
-.nav-search:hover {
-    border: 2px solid orange;
+.row::after {
+    display: table;
+    clear: both;
+    content:"";
 }
-/**boox4**/
-span {
-    font-size: 0.85rem;
+.col-1 {width:8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
 }
-.nav-second {
-    font-size: 0.85rem;
-    font-weight:700;
+nav {
+    width:100%;
+    margin:0;
+}
+nav ul {
+    background-color: #efa3a3;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav-right{
+    float: right;
+}
+ul.topnav li a {
+    display:block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #060606;
+}
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color:#fff;
+}
+ul.topnav li.dropdownIcon {
+    display: none;
 }
 
-/**box5**/
-.nav-cart i {
-    font-size: 0.85rem;
+#section-1-gradient {
+    background: #e74a4a;
+    background: -webkit-linear-gradient(#ea4444, #e43f41);
+    background: -o-linear-gradient(#ea4444, #e43f41);
+    background: -moz-linear-gradient(#ea4444, #e43f41);
+    background: linear-gradient(#ea4444, #e43f41);
 }
-.nav-cart {
-    font-size: 0.85rem;
-    font-weight:700;
-}
-/**pannel**/
-.panel{
-    height:40px;
-    background-color: #222f3d;
-    display: flex;
-    color: white;
-    align-items:center;
-    justify-content: space-evenly; 
-}
-.panel-ops p{
-    display: inline;
-    margin-left: 15px;
-}
-.panel-ops {
-    width: 70%;
-    font-size: 0.85rem;
-}
-.panel-deals {
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-/**hero section**/
-.hero-section {
-    background-image: url("hero_image.jpg");
-    background-size: cover;
-    height:350px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.hero-msg {
-    background-color: white;
-    color: black;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    width: 90%;
-    margin-bottom: 25px;
-
-}
-.hero-msg a {
-    color: #007185;
-}
-/**shop-section**/
-.shop-section {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly;
-    background-color: #e2e7e6; 
-}
-.box {
-    border:2px solid black;
-    height: 400px;
-    width:23%;
-    background-color: white;
-    padding:20px 0px 15px;
-    margin-top: 15px;
-}
-
-.box-img {
-    height: 300px;
-    background-size: cover;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.box-content {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.box-content p{
-    color: #007185;
-}
-
-/**footer panel**/
-.footer {
-    margin-top: 15px;
-}
-.foot-panel1 {
-    background-color: #37475a;
-    color:white;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:0.85rem;
-}
-.foot-panel2 {
-    background-color: #222f3d;
-    color: white;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-}
-ul {
-    margin-top:20px;
-}
-ul a{
+div.box {
+    text-align: center;
+    margin:24px;
+    padding: 36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 
+    0 2px 3px 0 rgba(0,0,0,.1);
+    /*1.horizontal length 
+      2.vertical length 
+      3.blur radius (blur shadow around in circle)
+      4.spread radius(thin line around the box)*/
+} 
+div.slopeIcon img {
     display: block;
-    font-size:0.85rem;
-    margin-top: 10px;
-    color:#dddddd;  
+    margin:auto;
+    width:500px;
+    box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, .15), 
+    2px 2px 17px 2px rgba(0,0,0,1);
+
 }
-.foot-panel3 {
-    background-color: #222f3d;
-    color: white;
-    border-top:0.5px solid white;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button {
+    font-size: 32px ;
+    font-weight: 700;
+    color: #fff;
+    background-color: #e4063e;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius:7px; 
 }
-.logo {
-    background-image: url("amazon_logo.png");
-    background-size: cover;
-    height: 50px;
+button.learnMore {
+    display: block;
+    margin: auto;
 }
-.fot-panel4 {
-    background-color: #0f1111;
-    color: white;
-    height: 80px;
-    font-size: 0.7rem;
+
+div.icon {
+    width: 100%;
+}
+div.leftSide-col {
+    margin-left: 20%;
+}
+div.rightSide-col {
+    margin-left: 15%;
+}
+h1.large {
+    color:#fff;
+    font-size: 35px;
+    margin: 0;
+    line-height: 35px;
+
+}
+h1.section2Header {
+    font-size: 65px;
     text-align: center;
 }
-.pages{
-    padding-top: 25px;
+form h2 {
+    color: aliceblue;
+
 }
-.copyrite{
-    padding-top: 5px;
+input[type="text"] {
+    font-size: 20px;
+    width: 300px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+
 }
-/** this is for shadow of text and  shapee 3d **/
-/** background: linear-gradient(to left, #00ccff, #b3f0ff)
-box-shadow: 3px 5px 3px black;
-text shadow: 2px 2px 5px black; **/
+footer.footsy {
+    background-color: #666;
+    padding-left: 10%;
+}
+footer.footsy h1 {
+    color: #fff;
+    font-size: 35px;;
+}
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+footer.footsy ul li {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+}
 
 
-     
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display:none;
+    }
+
+ ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+ }
+ ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+ ul.topnav.responsive {
+    position: relative;
+ }
+ ul.topnav.responsive li{
+    display: inline;
+    float: none;
+ }
+ ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+ }
+ h1.section2Header {
+    font-size: 55px;
+ }
+ article p {
+    font-size: 25px;
+ }
+ .col-6 , .col-4, .col-7, .col-5{
+    width: 100%;
+    margin:0;
+ }
+ div.mobile {
+    width: 50%;
+    display: block;
+ }
+ div.box {
+    padding: 5px;
+    display: block;
+ }
+ div.slopeIcon {
+    margin: 10px;
+ }
+ div.slopeIcon img {
+    width:100%;
+ }
+ div.leftSide-col, div.rightSide-col {
+    margin:15px;
+ }
+ input[type="text"] {
+    width: 350px;
+ }
+ .videoContainer iframe {
+    position: relative;
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+ }
+}
